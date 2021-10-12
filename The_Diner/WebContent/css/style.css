@@ -1,0 +1,191 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	border-collapse : collapse;
+	margin:0px;
+	padding:0px;
+	color: #000000;
+}
+
+
+/* �빐�뜑 */
+ 
+#wrap { height : 400px; object-fit: cover;	background-image:url("../image/s8.jpg"); }
+.aa { background-color: #2c2c2c; height : 120px; }
+
+#wrap .aa .intro { height : 300px; width : 100%; }
+
+/* nav2瑜� 媛먯떬 div �깉濡� 留뚮벉 */
+#wrap .aa .intro ul.nav2 { display:flex; margin:auto; justify-content: flex-end; line-height:20px; width:100%;  } /* nav2 */
+#wrap .aa .intro ul.nav2 li { margin-left:30px; }
+#wrap .aa .intro ul.nav2 li a { color: #E6E5E4; font-size: 13px; text-decoration: none; }
+
+
+#wrap .aa .intro .header { width:100%; margin:auto; display:flex; /* justify-content: center; */ flex-wrap: wrap;     flex-direction: row; height:0px;}
+#wrap .aa .intro .header .title {  width:150px; height:45px; border-radius:5px; margin-top:5px; margin-left: 20px;} /* .title */
+#wrap .aa .intro .header .title a h1{ color: #E6E5E4; }
+
+
+#wrap .aa .intro .header .nav { display:flex; margin:auto; line-height : 30px}
+#wrap .aa .intro .header .nav ul.list  {width: 100%; margin: 0 auto;}
+#wrap .aa .intro .header .nav ul.list > li.menu1 { position: relative; float: left; margin-left:45px; margin-right:45px; cursor: default; border-bottom: 1px solid white; } 
+#wrap .aa .intro .header .nav ul.list > li.menu1 h3 { color: #E6E5E4; cursor: pointer; width: 140px; text-align: center;}
+#wrap .aa .intro .header .nav ul.list > li.menu1:hover h3 { color: #ff8000; width: 150px; }
+#wrap .aa .intro .header .nav ul.list > li.menu1 > ul.menu2 > li {border-bottom: 1px solid white; text-align: center; background-color: #ff8000;}
+#wrap .aa .intro .header .nav ul.list > li.menu1 > ul.menu2 > li > a { color: #E6E5E4; }
+#wrap .aa .intro .header .nav ul.list > li.menu1 > ul.menu2 > li:hover {background-color: #bb5000;}
+	
+
+.flex{
+  display:flex;
+}
+
+.flex-jc-c{ 
+  justify-content:center;
+}
+.con{
+  max-width:1200px;
+  margin:0 auto;
+  border:1px solid #837e7c;
+}
+
+.article-board-box{
+  position:relative;
+  border:1px solid #837e7c;
+}
+.slide_wrapper{
+  border: 1px solid #837e7c;
+  position:relative;
+  width:960px;
+  margin:0 auto;
+  height:300px;
+  overflow:hidden
+}
+
+.slides{
+  position:absolute;
+  left:0;
+  top:0;
+  transition:left 0.5s ease-out;
+}
+
+.slides li:not(:last-child){
+  justify-content:flex-start;
+  margin-right:30px;
+}
+
+
+.controls{
+  text-align:center;
+}
+
+.controls span{
+  z-index:2;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.controls>.prev{
+  right:calc(100% - 40px);
+}
+
+.controls>.next{
+  left:calc(100% - 40px);
+}
+
+.ha{
+  width:50px;
+}
+
+/*紐명넻*/
+#middle:after { content:" "; display:block; clear:both;} 
+#middle {display: flex; justify-content: center; top: 480px;min-width: 1120px;margin: 0 auto; }
+
+/*紐명넻 end*/
+
+/* left menu */
+#middle .leftMenu {float: left;width: 220px;padding: 80px 0 80px;}
+#middle .leftMenu  h2 { height: 115px; line-height: 46px; font-size: 28px; color: ff7f00; text-align: center; font-weight: bold; }
+#middle .leftMenu  h2 span { display: block; line-height: 26px; font-size: 18px; color: #1a1a1a; }
+#middle .leftMenu .lm ul.list {border-style: 1px solid #ddd;}
+#middle .leftMenu .lm ul.list li {}
+#middle .leftMenu .lm ul.list li a { display: block; height: 46px; line-height: 45px; font-size: 14px; color: #1a1a1a; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; padding-left: 25px; }
+#middle .leftMenu .lm ul.list li a:hover { background-color: #eee; }
+#middle .leftMenu .lm ul.list li.active a { color: #fff; background-color: ff7f00; }
+/* left menu end*/
+
+/* mainList */
+#middle .menuMenu {min-height: 500px;min-width:850px;float: right; padding: 80px 0 80px; padding-left: 20px; border-bottom: 1px solid #ddd; }
+#middle .menuMenu .menuintro { position: relative; height: 70px; border-bottom: 1px solid #ddd; padding: 0 0 20px; margin-bottom: 30px;}
+#middle .menuMenu .menuintro h3 { line-height: 50px; font-size: 28px; color: #1a1a1a; }
+#middle .menuMenu .menuintro ul.road { position: absolute; right: 0; bottom: 22px; height: 20px;}
+#middle .menuMenu .menuintro ul.road li { float: left; color: #4e4e4e;padding-left: 12px; margin-left: 6px;}
+#middle .menuMenu .menuintro ul.road li.home {padding-left: 16px;}
+
+#middle .menuMenu .contents .pclist1 { border: 5px solid #ddd; border-radius: 10px; align-content: center; text-align: -webkit-center; width: 850px;}
+#middle .menuMenu .contents .pclist { border: 5px solid #ddd; border-radius: 10px; align-content: center; text-align: -webkit-center;}
+#middle .menuMenu .contents .pclist .table { border-collapse: separate; border-spacing: 10px 10px;}
+#middle .menuMenu .contents .pclist .table tr { align-content: center; border-bottom: 2px solid #ddd;}
+#middle .menuMenu .contents .pclist .table tr td{ padding-right: 40px; padding-top: 20px; padding-bottom: 20px; }
+#middle .menuMenu .contents .pclist .table tr td.first { border-right: 2px solid #ddd;}
+#middle .menuMenu .contents .pclist .table tr td:not(.first) { padding-left: 15px;} 
+#middle .menuMenu .contents .pclist .table tr td.first h3 { text-align: center; }
+#middle .menuMenu .contents .pclist input.bt { width: 100px; height: 40px; margin-top: 20px; margin-bottom: 20px; }
+
+#middle .menuMenu .contents .pclist .jido, .img, .in { margin: 20px;  }
+
+
+#middle .menuMenu .contents .pclist table.wlist { table-layout:fixed; width: 100%; border-bottom : 1px solid #ddd; overflow: hidden;}
+#middle .menuMenu .contents .pclist table.wlist tr { height: 40px; border-bottom : 1px solid #ddd; }
+#middle .menuMenu .contents .pclist table.wlist tr.list td { text-align: center; }
+#middle .menuMenu .contents .pclist table.wlist tr.list { background-color: #b5b5b5; }
+#middle .menuMenu .contents .pclist table.wlist tr.neyoung td { border-left : 1px; border-right: 1px; text-align: center; }
+#middle .menuMenu .contents .pclist table.wlist tr.neyoung td.twotwo { text-align: left; overflow: hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+#middle .menuMenu .contents .pclist .menu tr td { padding: 20px; }
+#middle .menuMenu .contents .pclist .resTable { margin: 20px; }
+#middle .menuMenu .contents .pclist .resTable tr > td{ padding: 10px;}
+
+
+/* mainList end */
+#footer { position:relative; bottom: 0px; width: 100%; background-color: #eee; margin-top: 50px; padding: 36px 0; }
+#footer .info { position: relative; width: 1120px; padding-left: 300px; margin: 0 auto; }
+#footer ul.list:after { content:" "; display:block; clear:both;}
+#footer ul.list {}
+#footer ul.list li { float: left; line-height: 22px; color: #353535; padding-left: 11px; margin-left: 10px; }
+#footer ul.list li.first { background: none; padding-left: 0; margin-left: 0; }
+
+
+/* index_main*/
+
+.index_menu{text-align: center;}
+.index_res{  height: 150px; font-size: 28px;   font-weight: bold; }
+table.index_table{width:70%; margin-left:15%; margin-right:15%; border: 1px solid #ddd; border-radius: 5px; }
+table.index_table td,th{padding: 30px; border: 1px solid #ddd; }
+table.index_table td,th:hover { cursor: pointer;}
+p.index_p{text-shadow: 2px 2px 2px gray;}
+table.index_mtable{width:40%; margin-left:30%; margin-right:30%;    border: 1px solid #444444;}
+table.index_mtable td,th{padding: 15px;  border: 1px solid #444444;}
+/*index_main end*/
+ 
+/*login_center */
+.login_center{position:relative;  width: 100%;  margin-top: 0px; padding: 150px 0;}
+.login_center .login_header{position: relative; width: 30%; padding-top : 3px; margin: 0 auto; text-align:center}
+.login_center .login_id{position: relative; width: 30%; padding-top : 30px; margin: 0 auto; }
+.login_center .login_pw{position: relative; width: 30%; padding-top : 5px; margin: 0 auto; }
+.login_center .login_submit{position: relative; width: 30%; padding-top : 5px; padding-bottom :5px; margin: 0 auto; text-align: center;}
+table.login_find{width:30%; margin-left:35%; margin-right:35%;    border: 1px solid #444444;}
+table.login_find td,th{padding: 15px;  border: 1px solid #444444;}
+
+table.resend{width:20%; margin-left:40%; margin-right:40%;    border: 1px solid #444444;}
+table.resend td,th{padding: 15px;  border: 1px solid #444444;}
+
+table.res2{width:70%; margin-left:15%; margin-right:15%;    border: 1px solid #444444;}
+table.res2 td,th{padding: 10px;  border: 1px solid #444444; font-weight: bold; }
+
+/* 二쇰쭚 (�넗,�씪) �깋源� 蹂�寃� */
+.ui-datepicker-calendar > tbody td.ui-datepicker-week-end:first-child a { color: red; }
+.ui-datepicker-calendar > tbody td.ui-datepicker-week-end:last-child a { color: blue; }
+/* timepicker �룿�듃 �겕湲� 議곗젙 */
+.ui-timepicker { font-size: 12px; width: 80px; }
